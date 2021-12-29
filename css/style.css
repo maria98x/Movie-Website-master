@@ -1,0 +1,131 @@
+.myColor{
+    border-color: #a30404!important;
+    background: #E50914!important;
+    color: white!important;
+}
+.myFont{
+    font-family: 'Oswald', sans-serif;
+}
+.card:hover{
+  transform: scale(1.05);
+  
+}
+.myImage{
+  object-fit:cover;
+  width: 100%;
+}
+
+
+/*  */
+
+
+/*  */
+
+
+/* img {
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+img {
+  pointer-events: none;
+} */
+.movie_card{
+  padding: 0 !important;
+  width: 15rem;
+  margin:14px; 
+  border-radius: 10px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+}
+.movie_card img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 20rem;
+  
+}
+.movie_info{
+  color: #5e5c5c;
+}
+
+.movie_info i{
+  font-size: 20px;
+}
+.card-title{
+  width: 80%;
+  height: 4rem;
+}
+
+
+
+.hover {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60%;
+}
+
+.hover-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  transition: all 0.4s;
+}
+
+.hover img {
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+  height: 100%;
+}
+
+
+.hover-content {
+  position: relative;
+  z-index: 99;
+}
+
+
+/* DEMO 2 ============================== */
+.hover-2 .hover-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+}
+
+.hover-2-title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 99;
+  transition: all 0.3s;
+}
+
+.hover-2-description {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  left: 0;
+  text-align: center;
+  z-index: 99;
+  transition: all 0.3s;
+}
+
+.hover-2:hover .hover-2-title {
+  transform: translateY(-1.5rem);
+}
+
+.hover-2:hover .hover-2-description {
+  bottom: 0.5rem;
+  opacity: 1;
+}
+
+.hover-2:hover .hover-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+}
+
