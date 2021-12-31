@@ -6,31 +6,19 @@
 .myFont{
     font-family: 'Oswald', sans-serif;
 }
+.myFont2{
+  font-family: 'Montserrat';
+}
 .card:hover{
   transform: scale(1.05);
   
 }
 .myImage{
-  object-fit:cover;
-  width: 100%;
+
+  z-index: -10;
 }
 
 
-/*  */
-
-
-/*  */
-
-
-/* img {
-    -webkit-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
-    user-drag: none;
-}
-img {
-  pointer-events: none;
-} */
 .movie_card{
   padding: 0 !important;
   width: 15rem;
@@ -75,7 +63,7 @@ img {
 }
 
 .hover img {
-  width: auto;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -129,3 +117,71 @@ img {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
 }
 
+
+.minutes{
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.13);
+}
+
+h1{
+  color: #fff;
+  font-weight: 400;
+}
+.blue{
+  color: #9ac7fa;
+  
+}
+
+/* 
+div.stars {
+  width: 270px;
+  display: inline-block
+}
+
+.mt-200 {
+  margin-top: 200px
+}
+
+input.star {
+  display: none
+}
+
+label.star {
+  padding: 5px;
+  font-size: 20px;
+  color: white;
+  transition: all .2s
+}
+
+input.star:checked~label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s
+}
+
+input.star-5:checked~label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px rgb(104, 88, 76)
+}
+
+input.star-1:checked~label.star:before {
+  color: #F62
+}
+
+label.star:hover {
+  transform: rotate(-15deg) scale(1.3)
+}
+
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome
+} */
+
+.opacity30 {
+  box-shadow: inset 3px 3px 4px black;
+ 
+}
