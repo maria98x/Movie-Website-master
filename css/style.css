@@ -1,50 +1,41 @@
-.myColor{
-    border-color: #a30404!important;
-    background: #E50914!important;
-    color: white!important;
+.myColor {
+  border-color: #a30404 !important;
+  background: #e50914 !important;
+  color: white !important;
 }
-.myFont{
-    font-family: 'Oswald', sans-serif;
+.myFont {
+  font-family: "Oswald", sans-serif;
 }
-.myFont2{
-  font-family: 'Montserrat';
+.myFont2 {
+  font-family: "Montserrat";
 }
-.card:hover{
+.movie_card:hover {
   transform: scale(1.05);
-  
 }
-.myImage{
-
-  z-index: -10;
+.myImage {
+  height: 500px;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    overflow: hidden;
+    background: linear-gradient(rgba(44, 42, 44, 0.8), rgba(41, 35, 35, 0.8));
+    background-size: cover;
+    background-repeat: no-repeat;z-index: -10;
 }
 
-
-.movie_card{
+.movie_card {
   padding: 0 !important;
   width: 15rem;
-  margin:14px; 
-  border-radius: 10px;
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+  margin: 0px;
+
+  
 }
-.movie_card img{
+.movie_card img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   height: 20rem;
-  
 }
-.movie_info{
-  color: #5e5c5c;
-}
-
-.movie_info i{
-  font-size: 20px;
-}
-.card-title{
-  width: 80%;
-  height: 4rem;
-}
-
-
 
 .hover {
   overflow: hidden;
@@ -71,12 +62,10 @@
   height: 100%;
 }
 
-
 .hover-content {
   position: relative;
   z-index: 99;
 }
-
 
 /* DEMO 2 ============================== */
 .hover-2 .hover-overlay {
@@ -117,71 +106,81 @@
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
 }
 
-
-.minutes{
+.minutes {
   display: inline-block;
   margin-top: 10px;
   color: #fff;
   padding: 5px;
   border-radius: 5px;
-  border: 1px solid rgba(255,255,255,0.13);
+  border: 1px solid rgba(255, 255, 255, 0.13);
 }
 
-h1{
+h1 {
   color: #fff;
   font-weight: 400;
 }
-.blue{
+.blue {
   color: #9ac7fa;
-  
 }
-
-/* 
-div.stars {
-  width: 270px;
-  display: inline-block
-}
-
-.mt-200 {
-  margin-top: 200px
-}
-
-input.star {
-  display: none
-}
-
-label.star {
-  padding: 5px;
-  font-size: 20px;
-  color: white;
-  transition: all .2s
-}
-
-input.star:checked~label.star:before {
-  content: '\f005';
-  color: #FD4;
-  transition: all .25s
-}
-
-input.star-5:checked~label.star:before {
-  color: #FE7;
-  text-shadow: 0 0 20px rgb(104, 88, 76)
-}
-
-input.star-1:checked~label.star:before {
-  color: #F62
-}
-
-label.star:hover {
-  transform: rotate(-15deg) scale(1.3)
-}
-
-label.star:before {
-  content: '\f006';
-  font-family: FontAwesome
-} */
 
 .opacity30 {
   box-shadow: inset 3px 3px 4px black;
- 
+}
+
+.rate {
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 1em;
+    font-size: 30px;
+    font-weight: 300;
+    color: #FFD600;
+    cursor: pointer
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+.buttons {
+    top: 36px;
+    position: relative
+}
+
+.rating-submit {
+    border-radius: 15px;
+    color: #fff;
+    height: 49px
+}
+
+.rating-submit:hover {
+    color: #fff
 }

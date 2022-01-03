@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Movie</title>
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+<link rel="stylesheet" href="/css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800" rel="stylesheet" >
+<script src="https://kit.fontawesome.com/43952355cf.js" crossorigin="anonymous" ></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body class="myFont">
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-expand-lg bg-dark shadow-lg">
+    <div class="row container-fluid">
+        <div class="col">
+         
+          <ul class="navbar-nav "style="font-size:19px">
+            <li class="nav-item "> 
+              <div class="navbar-brand">
+              <span class="navbar-caption-wrap"><a class="text-white display-6  text-decoration-none" href="index.html">
+                      Movies</a></span>
+          </div></li>
+            <li class="nav-item ">
+              <a class="nav-link text-white opacity-50 mt-3" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white opacity-50 mt-3" href="#">My list</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white opacity-50 mt-3" href="favPage.html">My Favorites</a>
+            </li>
+          </ul>
+        </div>
+         <div class="col-4">
+  
+          <div class=" input-group "> 
+            <input class=" form-control  input input-group" type="search" id ="search-input"placeholder="Find a movie" aria-label="Search">
+          <button class="btn btn-outline-success input-group-text myColor text-white  my-sm-0 " id ="search-btn" type="submit">Search</button>
+    
+          </div>
+        </div> 
+  
+       
+      </div>
+  </nav>
+ 
+<div class="container-fluid bg-black" >
+    <div class="row py-4" id="search-data"></div>
+  
+
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog mw-100 w-75 modal-dialog-scrollable">
+      <div class="modal-content bg-dark">
+  
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+        <div class="modal-body myFont2">
+       <div class="row">
+        <div class="col">
+       
+        <img id="modal-img" src="" class="img-responsive w-75 myImage" alt="...">
+       
+        </div>
+        <div class="col">
+        <div class="text-white">
+       <h2 id="title"> </h2>
+        <h6 class="blue"id = "date"> </h6>
+       <span class="minutes" id="min"> min</span>
+        <span id="all-gen"> </span><br>
+        <span class="my-5"id="rate"> </span>
+        <h6 class="mt-4 mb-3" id="overview"> </h6>
+        <div class="text-center"> <button type="button" class="btn btn-light  opacity-50 my-2"><i class="fas fa-heart "> Add to Favorites</i></button>
+          <button type="button" class="btn btn-light myFont2 opacity-50"><i class="fas fa-plus"> Add to watch list</i></button> </div>
+        <div class="text-center my-3">
+          <span><button id="imdb" type="button" class="btn btn-light opacity-50"><strong> IMDB</strong></button> </span>
+          <span class="dropdown">
+          <button class="btn btn-light dropdown-toggle opacity-50" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <strong> Rate</strong>
+          </button>
+          <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">1</a>
+            <a class="dropdown-item" href="#">2</a>
+            <a class="dropdown-item" href="#">3</a>
+            <a class="dropdown-item" href="#">4</a>
+            <a class="dropdown-item" href="#">5</a>
+          </div>
+        </span>
+        </div>
+
+
+         </div>
+        </div>
+        </div>
+        <!-- movies trailers -->
+        <h3 class="text-white my-4"> Trailers </h3>
+        <div class="row"id="movie-trailer"> 
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/22oiqgtV6hw?rel=0" allowfullscreen></iframe>
+          </div>
+        </div>
+      
+    </div>
+   </div>
+    </div>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="js/searchjs.js"></script>
+  <script src="js/modalandfav.js"></script>
+  <script src="https://kit.fontawesome.com/43952355cf.js" crossorigin="anonymous" ></script>
+</body>
+</html>
